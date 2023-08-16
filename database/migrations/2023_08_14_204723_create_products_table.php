@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name_product');
             $table->string('barcode')->unique();
             $table->string('image');
-            $table->unsbigInteger('sell_price')->unsigned();
+            $table->bigInteger('sell_price')->unsigned();
             $table->bigInteger('buy_price')->unsigned();
             $table->bigInteger('latest_price')->unsigned();
             $table->integer('stock');
