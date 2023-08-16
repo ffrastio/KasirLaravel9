@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Product extends Model
+class Transaction extends Model
 {
     use HasFactory, SoftDeletes;
     
@@ -16,6 +16,6 @@ class Product extends Model
      * @var array
      */
     protected $fillable = [
-        'name_product', 'category_id', 'image', 'barcode', 'sell_price', 'buy_price', 'latest_price', 'stock', 'quantity'
+        'invoice', 'cashier_id', 'customer_id', 'invoice', 'cash', 'change', 'discount', 'grand_total'
     ];
 }
